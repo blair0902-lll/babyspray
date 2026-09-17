@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>寶寶家庭抗菌噴霧選購清單</title>
+</head>
+<body>
+<style>
+  :root{
+    --bg:#FFFFFF; --bg-alt:#F7F6F3; --surface:#FFFFFF; --text:#37352F; --text-muted:#787774;
+    --accent:#2F7D6B; --border:#E9E5DE; --label:#2F7D6B;
+    --green-bg:#DDEDE7; --green-text:#2F7D6B;
+    --yellow-bg:#FBF3D9; --yellow-text:#9A7B1F;
+    --red-bg:#FBE4E4; --red-text:#B23B32;
+    --blue-bg:#E6EEF7; --blue-text:#3B6FA0;
+    --grey-bg:#F1F0ED; --grey-text:#6E6A62;
+    --footer-text:#A9A39A; --src-text:#5B8A72;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1F1E1C; --bg-alt:#27251F; --surface:#27251F; --text:#E9E6DF; --text-muted:#A39C8F;
+      --accent:#5FBFA6; --border:#3A362E; --label:#5FBFA6;
+      --green-bg:#1E332C; --green-text:#7FD9BE;
+      --yellow-bg:#3A2F14; --yellow-text:#E8C96B;
+      --red-bg:#3A211F; --red-text:#F0938B;
+      --blue-bg:#1C2A38; --blue-text:#9CC3EA;
+      --grey-bg:#2E2B26; --grey-text:#B5AD9F;
+      --footer-text:#847C6E; --src-text:#5FBFA6;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1F1E1C; --bg-alt:#27251F; --surface:#27251F; --text:#E9E6DF; --text-muted:#A39C8F;
+    --accent:#5FBFA6; --border:#3A362E; --label:#5FBFA6;
+    --green-bg:#1E332C; --green-text:#7FD9BE;
+    --yellow-bg:#3A2F14; --yellow-text:#E8C96B;
+    --red-bg:#3A211F; --red-text:#F0938B;
+    --blue-bg:#1C2A38; --blue-text:#9CC3EA;
+    --grey-bg:#2E2B26; --grey-text:#B5AD9F;
+    --footer-text:#847C6E; --src-text:#5FBFA6;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; padding:0 16px; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    line-height:1.6; font-size:15px;
+  }
+  .wrap{max-width:640px; margin:0 auto; padding-block:0 60px;}
+  header.top{
+    background:var(--bg-alt); margin:0 -16px 16px; padding:20px 16px 16px;
+    border-bottom:1px solid var(--border);
+  }
+  header.top h1{margin:0 0 4px; font-size:1.15rem; font-weight:700; text-wrap:balance;}
+  header.top p{margin:0; font-size:.8rem; color:var(--text-muted);}
+  .callout{
+    border-left:3px solid var(--accent); background:var(--bg-alt); border-radius:0 8px 8px 0;
+    padding:10px 12px; font-size:.8rem; color:var(--text-muted); margin:0 0 18px;
+  }
+  nav.tabs{
+    position:sticky; top:env(safe-area-inset-top, 0px); z-index:10; display:flex; gap:18px;
+    background:var(--bg); padding:0 0 0; margin:0 0 16px;
+    border-bottom:1px solid var(--border);
+  }
+  nav.tabs button{
+    border:none; background:none; padding:10px 2px; font-size:.85rem;
+    color:var(--text-muted); font-weight:600; cursor:pointer;
+    border-bottom:2px solid transparent; margin-bottom:-1px;
+  }
+  nav.tabs button:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  nav.tabs button.active{color:var(--accent); border-bottom-color:var(--accent);}
+  section.view{display:none;}
+  section.view.active{display:block;}
+  .card{
+    background:var(--surface); border-radius:8px; padding:12px 14px; margin-bottom:10px;
+    border:1px solid var(--border);
+  }
+  .card summary{
+    list-style:none; cursor:pointer; display:flex; align-items:center;
+    justify-content:space-between; gap:8px;
+  }
+  .card summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  .card summary::-webkit-details-marker{display:none;}
+  .card summary .name{font-weight:700; font-size:.95rem; color:var(--text);}
+  .card summary .chev{font-size:.75rem; color:var(--text-muted); transition:transform .2s;}
+  details[open] summary .chev{transform:rotate(90deg);}
+  .badges{display:flex; flex-wrap:wrap; gap:6px; margin:8px 0 2px;}
+  .badge{
+    font-size:.68rem; padding:3px 8px; border-radius:6px; font-weight:600; white-space:nowrap;
+  }
+  .b-green{background:var(--green-bg); color:var(--green-text);}
+  .b-yellow{background:var(--yellow-bg); color:var(--yellow-text);}
+  .b-red{background:var(--red-bg); color:var(--red-text);}
+  .b-blue{background:var(--blue-bg); color:var(--blue-text);}
+  .b-grey{background:var(--grey-bg); color:var(--grey-text);}
+  .row{margin-top:8px; font-size:.85rem;}
+  .row .label{color:var(--label); font-weight:700; font-size:.7rem; display:block; margin-bottom:2px;}
+  a.src{font-size:.75rem; color:var(--src-text); word-break:break-all;}
+  .need-title{font-size:.95rem; font-weight:700; color:var(--text); margin-bottom:2px; text-wrap:balance;}
+  .sec-note{font-size:.78rem; color:var(--text-muted); margin:0 0 14px;}
+  .footer-note{text-align:center; font-size:.72rem; color:var(--footer-text); margin-top:20px;}
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <h1>🧴 寶寶家庭抗菌噴霧選購清單</h1>
+    <p>10款比較 · 使用情境 · 挑選指南（資料整理：2026-09-16）</p>
+  </header>
+
+  <div class="callout">
+    ⚠️ 這份表是選購導航，不是醫療建議。「無酒精」不代表可入口、也不代表對所有病毒都有效；購買與使用前，仍以手上當前 SKU 包裝標示為準。
+  </div>
+
+  <nav class="tabs">
+    <button class="active" data-tab="compare">10款比較</button>
+    <button data-tab="usage">怎麼用</button>
+    <button data-tab="choose">怎麼選</button>
+  </nav>
+
+  <section class="view active" id="compare"></section>
+  <section class="view" id="usage"></section>
+  <section class="view" id="choose"></section>
+
+  <div class="footer-note">資料來源：各品牌官網 / SNQ國家品質標章認證頁　·　僅供選購參考</div>
+</div>
+
+<script>
+const products = [
+{name:"黃金盾07 抗菌清潔噴劑", alcohol:"green", alcoholLabel:"無酒精標示",
+ type:"有機矽季銨鹽類（Organosilane Ammonium Salt）",
+ feature:"表面形成抗菌護膜，主打最長 7 天長效防護",
+ test:"SNQ列細菌、黴菌與套膜病毒測試，含 H1N1、大腸桿菌、金黃色葡萄球菌等",
+ use:"玩具外表、餐椅、汽座、推車、門把等非入口表面",
+ caution:"先清除髒污；不同材質先局部測試。長效時間受摩擦、清洗及環境影響，入口用品仍依當前 SKU 標示",
+ tags:["長效護膜","非酒精","物體表面"],
+ src:"https://www.snq.org.tw/chinese/02_products/02_detail.php?pdid=3002"},
+
+{name:"淨淨 剋菌液", alcohol:"green", alcoholLabel:"無酒精標示",
+ type:"次氯酸、純水、氯化鈉",
+ feature:"配方單純，常見定位為居家與外出物品除菌",
+ test:"SGS／台美檢驗；官方資料含腸病毒、諾羅病毒相關摘要",
+ use:"一般玩具、桌椅、推車、外出物品表面",
+ caution:"次氯酸怕光、熱與久放，留意保存期限與有效濃度；入口用品需看瓶身是否要求沖洗",
+ tags:["次氯酸","日常清潔","無香精訴求"],
+ src:"https://www.yenzch.com/categories/clean-clean"},
+
+{name:"OHTrust 歐舒特 納米離子水", alcohol:"green", alcoholLabel:"無酒精標示",
+ type:"純水、氫氧根離子（納米離子水）",
+ feature:"非次氯酸路線，水性、無明顯氣味",
+ test:"SNQ／DailyMed資料；長庚大學新興病毒中心測試流感病毒、腸病毒E71、克沙奇病毒",
+ use:"手部外表、玩具與日常用品表面，依瓶身用法",
+ caution:"不可飲用、避免入眼。「水性」不代表可噴入口用品，應核對台灣販售 SKU 標示",
+ tags:["離子水","無酒精","低氣味"],
+ src:"https://www.snq.org.tw/chinese/03_service/02_detail.php?pdid=3425"},
+
+{name:"VirusBom 病毒崩 100ppm 噴劑", alcohol:"yellow", alcoholLabel:"微量酒精（非主要機制）",
+ type:"NTU-VirusBom、水（成分另列微量乙醇）",
+ feature:"物理吸附於表面形成防護，建議先清潔後噴灑",
+ test:"品牌列有抗菌、抗病毒與安全性檢測報告",
+ use:"玩具外表、桌面、衣物、外出用品等物體表面",
+ caution:"官網FAQ載明酒精已降至萬分之一，不宜稱「無酒精」；使用前搖勻，入口用品仍依當前 SKU 標示",
+ tags:["非酒精主機制","表面防護","隨身"],
+ src:"https://virusbom.com/faq/產品問題"},
+
+{name:"次綠康 健康除菌液", alcohol:"green", alcoholLabel:"無酒精標示",
+ type:"次氯酸（HClO）、水，常見即用型 200ppm",
+ feature:"水與食鹽電解生成，無色、低氣味，作用後還原成水",
+ test:"SNQ列抗菌試驗及腸病毒相關摘要",
+ use:"一般環境、玩具、推車、餐椅表面",
+ caution:"避光、避熱，開封後效期較短；濃縮原液（1000ppm）與即用型（200ppm）用法不同，不可混用概念",
+ tags:["次氯酸","多規格","環境除菌"],
+ src:"https://www.snq.org.tw/chinese/02_products/02_detail.php?pdid=3113"},
+
+{name:"寶護 專業級除菌噴霧", alcohol:"green", alcoholLabel:"無酒精配方",
+ type:"電解次氯酸水，SNQ載出廠 120±10ppm",
+ feature:"單一水性配方，定位嬰兒環境、隨身物品與居家表面",
+ test:"SNQ列腸病毒71型、A型H1N1、B型流感、諾羅病毒及多種細菌／真菌檢驗",
+ use:"嬰兒活動環境、玩具外表、衣物、浴廁與寵物周邊",
+ caution:"均勻噴灑並遵循所需接觸時間，避免日曬高溫；入口用品依瓶身是否需再沖洗",
+ tags:["次氯酸","嬰兒環境","菌株清單較完整"],
+ src:"https://www.snq.org.tw/chinese/02_products/02_detail.php?pdid=4892"},
+
+{name:"旺旺水神 抗菌液", alcohol:"green", alcoholLabel:"無酒精標示",
+ type:"微酸性電解次氯酸水（HClO）",
+ feature:"無色、低氣味，提供多項安全及微生物檢驗資料",
+ test:"品牌稱有多項菌種／病毒測試，成效不跨菌株或跨濃度推論",
+ use:"居家環境、桌椅、玩具外表、推車與一般物品表面",
+ caution:"一般商品非藥品，勿飲用；次氯酸需避光熱並注意效期",
+ tags:["次氯酸","大容量","居家日常"],
+ src:"https://www.watergod.com.tw/pages/demo_水神專業_什麼是水神"},
+
+{name:"白因子 環境抗菌液", alcohol:"green", alcoholLabel:"無酒精標示",
+ type:"低濃度次氯酸（HOCl）水溶液",
+ feature:"次氯酸路線，有肌膚型與環境型不同系列，需先分清 SKU",
+ test:"品牌公布多種病毒與細菌試驗；香港消委會曾測試防疫加強版",
+ use:"依 SKU 用於肌膚或環境／物品表面，不跨系列套用",
+ caution:"肌膚型與環境型不可只看品牌名判斷；注意濃度、效期、避光熱及是否需擦拭／沖洗",
+ tags:["次氯酸","多系列","先認SKU"],
+ src:"https://www.whitefactor.com.tw/"},
+
+{name:"貝恩神隊友 除菌噴霧", alcohol:"red", alcoholLabel:"含酒精（約50%）",
+ type:"乙醇約 50% ＋ 檸檬酸",
+ feature:"乙醇搭配檸檬酸相乘效果，主打可處理一般酒精較難對付的無套膜病毒",
+ test:"品牌宣稱針對諾羅病毒等無套膜病毒與多種病菌99.99%去除",
+ use:"食器、調理器具、餐桌椅、玩具等硬表面，依標示擦拭或乾燥",
+ caution:"易燃，遠離火源與高溫；避免寶寶吸入霧氣、入眼",
+ tags:["含酒精","檸檬酸","食器表面"],
+ src:"https://www.baan.com.tw/products/baan-alcohol-spray-400ml"},
+
+{name:"MOTHER-K DIA 純粹玩具用品除菌噴霧", alcohol:"red", alcoholLabel:"含酒精（30%）",
+ type:"穀物發酵酒精 30%、檸檬馬鞭草等",
+ feature:"玩具用品專用定位，帶香味，噴後以乾紙巾或布擦拭",
+ test:"官方列腸道沙門氏菌、金黃色葡萄球菌、大腸桿菌、綠膿桿菌試驗",
+ use:"一般玩具、餐桌椅及用品表面，按標示噴後擦拭",
+ caution:"不可直接噴人體或食物；含酒精須遠離火源並保持通風，塗層與原木先局部測試",
+ tags:["玩具專用","30%酒精","需擦拭"],
+ src:"https://www.nanababy.com.tw/products/mother-k-dia-純粹玩具用品除菌噴霧---500ml"},
+];
+
+const usageItems = [
+{item:"🧸 玩具", judge:"會不會被舔咬？材質是否怕酒精、氧化或水？",
+ rule:"先洗掉口水、食物殘渣與可見髒污，再依材質與標示處理",
+ type:"硬質非入口玩具可選物體表面型；常入口玩具優先選明確標示可用於該用途者",
+ after:"遵守接觸時間；需要時擦拭／沖洗，完全乾燥再給寶寶",
+ avoid:"不要把「無酒精」當成可入口證明；布偶與電子玩具避免過度浸濕",
+ conclude:"會入口：看SKU；不入口：看材質"},
+
+{item:"🪑 餐椅", judge:"寶寶會舔托盤嗎？是否直接接觸食物？",
+ rule:"先以清潔劑或清水去除食物與油污，再做表面處理",
+ type:"托盤屬食品接觸面，優先選有明確食器／食品接觸面用法者",
+ after:"依標示擦拭或沖洗，完全乾燥後使用",
+ avoid:"不要只噴不清潔；勿讓液體流入縫隙與安全帶扣",
+ conclude:"托盤比椅背更嚴格"},
+
+{item:"🚗 汽座", judge:"是否有阻燃布、皮革、金屬扣與安全帶？",
+ rule:"先查汽座原廠清潔指引，局部清潔優先",
+ type:"硬質外殼可依材質用表面型；布套用原廠允許方式",
+ after:"保持通風並完全乾燥，確認扣具正常",
+ avoid:"不可浸泡安全帶或用會破壞纖維／阻燃層的化學品",
+ conclude:"安全結構優先於除菌"},
+
+{item:"🛒 推車", judge:"布面、皮革、金屬與塑膠材質混合嗎？",
+ rule:"先去除泥沙與污垢，分材質處理",
+ type:"把手與硬表面可用相容的表面型；布面依洗標",
+ after:"通風晾乾，折疊前確認沒有潮濕",
+ avoid:"避免在密閉車內大量噴灑，防止輪軸與機構進水",
+ conclude:"分材質，不要整台同一噴法"},
+
+{item:"🍼 奶瓶", judge:"會直接盛裝奶水，是否可耐熱？",
+ rule:"首選拆解、刷洗、充分沖洗，再依月齡與產品說明消毒",
+ type:"煮沸、蒸氣、紫外線或經核准的奶瓶消毒方式；化學噴霧必須有明確奶瓶用法",
+ after:"充分沖洗／瀝乾依所選方式操作，避免二次污染",
+ avoid:"不要因產品寫「抗菌」就直接噴瓶內；注意塑膠耐熱與刮傷",
+ conclude:"清洗＋合適消毒，不靠一般噴霧"},
+
+{item:"🍭 奶嘴／固齒器", judge:"一定會長時間入口，材質是否可煮沸？",
+ rule:"照品牌耐熱與清潔指示；使用前後清洗，掉落後重新處理",
+ type:"優先用產品指定的煮沸／蒸氣／專用消毒方式",
+ after:"充分冷卻、乾燥，檢查裂痕與黏膩",
+ avoid:"不使用用途不明的環境噴霧；破損立即更換",
+ conclude:"入口最高標準：只按原廠指示"},
+
+{item:"🍽️ 餐具", judge:"是否直接接觸食物？材質耐熱嗎？",
+ rule:"先洗淨油污與食物殘渣，需要消毒時選餐具適用方式",
+ type:"洗碗機高溫、煮沸或明確標示可用於食器的產品",
+ after:"依標示沖洗或乾燥後再盛食物",
+ avoid:"不要混用清潔劑與含氯／次氯酸產品，避免殘留",
+ conclude:"食器標示要明確"},
+
+{item:"✋ 寶寶手", judge:"是否只是一般日常清潔？皮膚有傷口或濕疹嗎？",
+ rule:"流動水＋肥皂搓洗通常是優先選擇；外出無水時才考慮合適手部產品",
+ type:"明確標示可用於皮膚／手部且適齡的產品",
+ after:"完全乾燥；幼兒由成人協助，避免揉眼與舔手",
+ avoid:"環境用噴霧不要直接當手部產品；有刺激立即停用",
+ conclude:"能洗手就洗手，環境噴霧不代替洗手"},
+];
+
+const chooseItems = [
+{need:"想做日常玩具、推車、桌椅表面清潔",
+ pick:"水性次氯酸或其他非酒精物體表面型",
+ brands:"淨淨、次綠康、寶護、旺旺水神、白因子、OHTrust",
+ why:"氣味通常較低，適合日常大面積或多物件使用",
+ check:"有效濃度、效期、避光保存、是否需擦拭／沖洗",
+ avoid:"只看「嬰幼兒適用」四個字"},
+
+{need:"想要表面較長時間的抑菌護膜概念",
+ pick:"季銨鹽／有機矽表面護膜型，或品牌標示的防護型",
+ brands:"黃金盾07；VirusBom可作另一種表面防護概念比較",
+ why:"訴求不是只靠短時間揮發，而是表面附著／防護",
+ check:"摩擦、清洗後是否需補噴；材質相容與實際長效測試條件",
+ avoid:"把品牌最長時間當成所有情境保證"},
+
+{need:"想處理食器、餐桌或常見硬表面",
+ pick:"明確標示可用於食器／食品接觸面的配方",
+ brands:"貝恩神隊友；其他品牌需逐一看當前SKU",
+ why:"用途標示比「天然／無酒精」更重要",
+ check:"是否要擦拭或沖洗、接觸時間、是否可直接接觸食物",
+ avoid:"用環境型產品直接噴食物"},
+
+{need:"在意無套膜病毒相關資料",
+ pick:"找有指定無套膜病毒或替代病毒測試的產品",
+ brands:"貝恩神隊友；寶護、次綠康等需核對各自菌株報告",
+ why:"75%酒精並非對所有無套膜病毒都同樣有效",
+ check:"菌株名稱、測試濃度、作用時間與降幅，不能只看「99.9%」",
+ avoid:"把「抗病毒」視為對所有病毒有效"},
+
+{need:"想避開酒精味或易燃性",
+ pick:"標示無酒精的水性配方",
+ brands:"黃金盾07、淨淨、OHTrust、次綠康、寶護、旺旺水神、白因子",
+ why:"避開高酒精配方的氣味與易燃注意事項",
+ check:"無酒精不代表零刺激、可飲用或可直接噴入口用品",
+ avoid:"把VirusBom寫成完全無酒精"},
+
+{need:"需要含酒精、噴後擦拭的玩具用品方案",
+ pick:"中低濃度酒精＋產品指定擦拭流程",
+ brands:"MOTHER-K DIA；貝恩神隊友也可比較但配方與用途不同",
+ why:"適合偏好清楚「噴後擦拭」流程的家庭",
+ check:"火源、通風、材質掉色／塗層、不可噴人體或食物",
+ avoid:"用酒精產品處理皮革、塗層或不耐酒精材質"},
+
+{need:"寶寶會直接舔咬或物品會盛裝食物",
+ pick:"用途明確的入口／食器清潔消毒方式",
+ brands:"先看用品原廠與產品當前SKU，不按品牌一概推薦",
+ why:"入口風險高，必須以具體標示與沖洗要求判斷",
+ check:"是否允許入口接觸、是否要沖洗、材質耐熱與完整性",
+ avoid:"以「口服急毒性測試」取代日常入口使用指示"},
+];
+
+function badgeClass(a){ return a==="green"?"b-green":a==="red"?"b-red":"b-yellow"; }
+
+function renderCompare(){
+  const el = document.getElementById("compare");
+  el.innerHTML = '<p class="sec-note">點卡片展開詳情；顏色代表酒精標示：<span class="badge b-green">無酒精</span> <span class="badge b-yellow">微量</span> <span class="badge b-red">含酒精</span></p>'
+    + products.map(p => `
+    <details class="card">
+      <summary>
+        <span class="name">${p.name}</span>
+        <span class="chev">▶</span>
+      </summary>
+      <div class="badges">
+        <span class="badge ${badgeClass(p.alcohol)}">${p.alcoholLabel}</span>
+        ${p.tags.map(t=>`<span class="badge b-grey">${t}</span>`).join("")}
+      </div>
+      <div class="row"><span class="label">主要成分</span>${p.type}</div>
+      <div class="row"><span class="label">主要特色</span>${p.feature}</div>
+      <div class="row"><span class="label">檢測重點</span>${p.test}</div>
+      <div class="row"><span class="label">適合情境</span>${p.use}</div>
+      <div class="row"><span class="label">注意事項</span>${p.caution}</div>
+      <div class="row"><span class="label">資料來源</span><a class="src" href="${p.src}" target="_blank" rel="noopener">${p.src}</a></div>
+    </details>
+  `).join("");
+}
+
+function renderUsage(){
+  const el = document.getElementById("usage");
+  el.innerHTML = '<p class="sec-note">先看物品是否會入口，再看產品標示；清潔髒污和遵守接觸時間同樣重要。</p>'
+    + usageItems.map(u => `
+    <details class="card">
+      <summary>
+        <span class="name">${u.item}</span>
+        <span class="chev">▶</span>
+      </summary>
+      <div class="badges"><span class="badge b-blue">${u.conclude}</span></div>
+      <div class="row"><span class="label">先判斷</span>${u.judge}</div>
+      <div class="row"><span class="label">建議原則</span>${u.rule}</div>
+      <div class="row"><span class="label">可考慮類型</span>${u.type}</div>
+      <div class="row"><span class="label">使用後</span>${u.after}</div>
+      <div class="row"><span class="label">避免事項</span>${u.avoid}</div>
+    </details>
+  `).join("");
+}
+
+function renderChoose(){
+  const el = document.getElementById("choose");
+  el.innerHTML = '<p class="sec-note">從需求出發，再回到當前SKU的標示、菌株、濃度、接觸時間與使用方法。</p>'
+    + chooseItems.map(c => `
+    <details class="card">
+      <summary>
+        <span class="need-title" style="flex:1">${c.need}</span>
+        <span class="chev">▶</span>
+      </summary>
+      <div class="row"><span class="label">優先看哪一類</span>${c.pick}</div>
+      <div class="row"><span class="label">可先比較品牌</span>${c.brands}</div>
+      <div class="row"><span class="label">為什麼</span>${c.why}</div>
+      <div class="row"><span class="label">一定要再確認</span>${c.check}</div>
+      <div class="row"><span class="label">不建議這樣選</span>${c.avoid}</div>
+    </details>
+  `).join("");
+}
+
+renderCompare(); renderUsage(); renderChoose();
+
+document.querySelectorAll("nav.tabs button").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    document.querySelectorAll("nav.tabs button").forEach(b=>b.classList.remove("active"));
+    document.querySelectorAll("section.view").forEach(s=>s.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById(btn.dataset.tab).classList.add("active");
+    window.scrollTo({top:0, behavior:"instant"});
+  });
+});
+</script>
+
+</body>
+</html>
